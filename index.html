@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studebakers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <meta name="description" content="Studebakers - Handmade Pizzas, Salads, Subs, Ice Cream, and Tapwall drinks in Gateville, TX.">
+    <meta name="keywords" content="Studebakers, Pizza, Salads, Subs, Ice Cream, Gateville, Takeout, Delivery">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <header>
+        <h1>Welcome to Studebakers</h1>
+        <nav class="sticky-nav">
+            <a href="menu.html">Menu</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#daily-specials">Daily Specials</a>
+            <a href="#reviews">Reviews</a>
+        </nav>
+    </header>
+    <div id="loading-spinner"></div>
+    <main id="main-content">
+        <p>Handmade Pizza's, Salad's, Oven Toasted Subs, Ice Cream, and Pour My Beer Tapwall.</p>
+        <section id="daily-specials">
+            <h2>Today's Specials</h2>
+            <div class="carousel">
+                <div class="carousel-item active">Special 1: BBQ Chicken Pizza - $14.99</div>
+                <div class="carousel-item">Special 2: Spaghetti Dinner - $12.99</div>
+                <div class="carousel-item">Special 3: Family Combo - $29.99</div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-control next" onclick="nextSlide()">❯</button>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <blockquote>
+                <p>"The best pizza in town! Amazing crust and toppings!"</p>
+                <footer>— Jane Doe</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Great service and delicious subs. Highly recommend!"</p>
+                <footer>— John Smith</footer>
+            </blockquote>
+        </section>
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>2701 E. Main Street, Gateville, TX 76528</p>
+            <p>(254) 865-8389</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Studebakers. All rights reserved.</p>
+        <p>Follow us on <a href="https://www.facebook.com/Studebakers-Pizza" target="_blank" rel="noopener">Facebook</a>.</p>
+    </footer>
+</body>
+</html>
