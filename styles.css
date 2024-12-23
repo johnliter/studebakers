@@ -177,3 +177,43 @@ footer {
 .map-iframe {
     border: 0;
   }
+
+  .subs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sub-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sub-item h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.ingredients {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .subs-grid {
+        grid-template-columns: 1fr;
+    }
+}
